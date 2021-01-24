@@ -17,7 +17,7 @@ def createBanner(msg, font, fontsize, imageSize, colorRange):
     ]
 
     fgList = createColorList(colorRange[0], colorRange[1], colorRange[2])
-    print(fgList)
+    
     img = createNoisyImage(img, fgList, bgList, colorRange[2])
 
     plt.imsave("output.png",img)
